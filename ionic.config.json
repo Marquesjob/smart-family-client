@@ -1,0 +1,7 @@
+{
+  "name": "smart-family-client",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
