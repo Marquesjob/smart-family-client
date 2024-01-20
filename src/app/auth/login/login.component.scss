@@ -1,0 +1,53 @@
+.login {
+
+    background: #3880ff;
+
+    &__container {
+
+        position: absolute;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+
+        padding: 10px;
+
+    }
+
+    &__input-group {
+
+        padding: 5px;
+
+    }
+
+    &__button {
+
+        padding: 20px 0 0 0;
+
+        --background: #ffffff;
+        --border-radius: 5px;
+        --color: #4c8dff;
+        
+    }
+
+    &__input {
+
+        --color: #e2e2e2;
+        border-bottom: solid 1px #e2e2e2;
+
+        &__helper-text {
+
+            font-size: 13px;
+            color: #d2d2d2cc;
+
+            margin: 6px 0 0 0;
+
+        }
+
+    }
+
+
+}
