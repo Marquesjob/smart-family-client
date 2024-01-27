@@ -6,6 +6,8 @@ import { ActivatedRouteSnapshot, CanActivateFn, Router, RouterStateSnapshot } fr
 })
 class AuthService {
 
+  //TODO - Criar fluxo de validação do usuário
+
   constructor(private router: Router) {}
 
   canActivate(): boolean {
