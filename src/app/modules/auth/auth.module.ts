@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { LoginComponent } from './login';
 import { AuthRoutingModule } from './auth-routing.module';
 
-import { IonInput, IonItem, IonButton } from '@ionic/angular/standalone';
+import { IonInput, IonItem, IonButton, IonNote } from '@ionic/angular/standalone';
+import {  } from '@ionic/angular';
 
 @NgModule({
   declarations: [LoginComponent],
@@ -12,7 +13,8 @@ import { IonInput, IonItem, IonButton } from '@ionic/angular/standalone';
     AuthRoutingModule,
     IonInput,
     IonItem,
-    IonButton
+    IonButton,
+    IonNote
   ]
 })
 export class AuthModule { }

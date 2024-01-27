@@ -8,26 +8,27 @@ class AuthService {
 
   constructor(private router: Router) {}
 
-  canActivate(next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
+  canActivate(): boolean {
     
-    let valid = true;
+    let valid = false;
 
     if(valid) {
 
-      this.router.navigate(['/tabs/tab1'])
-
       return true;
 
-    }
+    } else {
 
-    return false;
+      this.router.navigate(['/auth/login']);
+
+      return false;
+    }
 
   }
 
 }
 
 export const AuthGuard: CanActivateFn = (next: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean => {
-  
-  return inject(AuthService).canActivate(next, state);
+
+  return inject(AuthService).canActivate();
 
 }
